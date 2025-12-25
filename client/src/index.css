@@ -119,10 +119,15 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    text-align: justify;
   }
   code, pre {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Courier New', monospace;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: left;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -155,8 +160,10 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
-    padding-right: 1rem;
+    padding-left: 1.25rem; /* 1.25 inches - academic left margin */
+    padding-right: 1rem; /* 1.0 inch - academic right margin */
+    padding-top: 1rem; /* 1.0 inch - academic top margin */
+    padding-bottom: 1rem; /* 1.0 inch - academic bottom margin */
   }
 
   .flex {
